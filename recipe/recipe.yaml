@@ -1,0 +1,35 @@
+context:
+  version: 39.1.0
+
+package:
+  name: fx
+  version: ${{ version }}
+
+source:
+  url: https://github.com/antonmedv/fx/archive/${{ version }}.tar.gz
+  sha256: bfd6e3acdd5ef31ff214df1ba5b24a3cfc99227e3b149b79cafe5732f191a26f
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - ${{ compiler('go-nocgo') }}
+    - go-licenses
+
+tests:
+  - script:
+      - fx -v
+
+about:
+  license: MIT
+  license_file:
+    - LICENSE
+    - license-files/
+  summary: Terminal JSON viewer
+  homepage: https://github.com/antonmedv/fx
+  repository: https://github.com/antonmedv/fx
+
+extra:
+  recipe-maintainers:
+    - danielnachun
