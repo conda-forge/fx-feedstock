@@ -1,5 +1,5 @@
 context:
-  version: "39.2.0"
+  version: "40.0.0"
 
 package:
   name: fx
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/antonmedv/fx/archive/${{ version }}.tar.gz
-  sha256: cdb98177f956615c961bc615fab0b30e73167295152d4f2d4cb70b16cdf47d6e
+  sha256: 92e5ade859952bc79a3c68492803ce0af25a7332c78c4a0e1914da302d88b478
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
